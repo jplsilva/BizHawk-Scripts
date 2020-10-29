@@ -1,7 +1,30 @@
-# Silent Hill 1 NTSC-U
+# Silent Hill 1 NTSC-U [SLUS-00707]
 
 ## Score Screen UI
 Shows the score screen entries in an User Interface, in real time.
+
+### Script Configurable Parameters:
+The script allows the user to customize some aspects of the UI.
+
+| Variable          | Description                                         | Possible Values                             |   Default                     |
+| ----------------- | --------------------------------------------------- | ------------------------------------------- | ----------------------------- |
+| gui_x             | GUI X Coordinate                                    | Numeric                                     | 1                             |
+| gui_y             | GUI Y Coordinate                                    | Numeric                                     | 1                             |
+| gui_anchor        | Gui Anchor                                          | topleft, topright, bottomleft, bottomright  | null                          |
+| line_hight        | Space between Text Lines                            | Numeric                                     | 15                            |
+| txt_color_normal  | Normal Text Color                                   | Hexadecimal / String (\*)                   | 0xFFFFFFFF (White)            |
+| txt_color_maxed   | Maxed Text Color (shown where points are maxed)     | Hexadecimal / String (\*)                   | 0xFFF8D868 (Gold)             |
+| txt_color_sh      | Show/Hide button Text Color                         | Hexadecimal / String (\*)                   | 0x99FFFFFF (Transparent White)|
+| saves_max         | Maximum number of saves to display                  | Numeric                                     | 999                           |
+| fighting_kills_max| Maximum number of fighting kills to display         | Numeric                                     | 4000                          |
+| shooting_kills_max| Maximum number of shooting kills to display         | Numeric                                     | 4000                          |
+| sh_gui_key        | Button to show/hide stats GUI                       | String (\*\*)                               | "ControlLeft"                 |
+| input_cooldown    | Cooldown frames between show/hide GUI button presses| Numeric                                     | 30 (at 60 fps ~ 0.5s)         |
+
+(\*) Check [TASVideos Lua API](http://tasvideos.org/Bizhawk/LuaFunctions.html) for more info.  
+(\*\*) Check [TASVideos Table Keys](http://tasvideos.org/LuaScripting/TableKeys.html) for more info.  
+
+Additionally, the description and UI index can be changed for all the UI entries.
 
 ### Points System (0-100):
 #### Mode:
