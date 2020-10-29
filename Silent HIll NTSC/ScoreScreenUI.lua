@@ -58,8 +58,8 @@ end
 -- Convert Playtime from seconds to H:m:s string
 local function playtime_tostr(val_playtime)
     local playtime_h = math.floor(val_playtime/3600)
-    local playtime_m = math.floor(math.mod(val_playtime,3600)/60)
-    local playtime_s = math.floor(math.mod(val_playtime,60))
+    local playtime_m = math.floor(math.fmod(val_playtime,3600)/60)
+    local playtime_s = math.floor(math.fmod(val_playtime,60))
     return string.format("%2dh %2dm %2ds", playtime_h, playtime_m, playtime_s)
 end
 
