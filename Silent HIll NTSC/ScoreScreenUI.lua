@@ -37,7 +37,7 @@ local gui_y             = 1             -- GUI Y Coordinate
 local gui_anchor        = null          -- Text Anchor: topleft, topright, bottomleft, bottomright
 local line_hight        = 15            -- Space between Text Lines
 local txt_color_normal  = 0xFFFFFFFF    -- Normal Text Color: White
-local txt_color_maxed   = 0xFFF8D868    -- Good Text Color: Gold
+local txt_color_maxed   = 0xFFF8D868    -- Maxed Text Color: Gold
 local txt_color_sh      = 0x99FFFFFF    -- Show/Hide button Text Color: Transparent White
 
 
@@ -181,16 +181,16 @@ end
 --
 --  Points Formula (0-100 => 0.0-10.0):
 --      Dificulty (Mode):
---          Easy    -5p
+--          Hard    0p
 --          Normal  0p
---          Easy    0p
+--          Easy    -5p
 --      Games Clear:
---          0       0p
---          1       2p
---          2       4p
---          3       6p
---          4       8p
 --          5+      10p
+--          4       8p
+--          3       6p
+--          2       4p
+--          1       2p
+--          0       0p
 --      Ending Type:
 --          Good+   10p
 --          Good    5p
