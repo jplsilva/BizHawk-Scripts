@@ -1,7 +1,8 @@
 # Silent Hill 1 NTSC-U [SLUS-00707]
 
 ## Score Screen UI
-Shows the score screen entries in an User Interface, in real time.
+Shows the score screen entries in an User Interface, in real time.  
+![score_screen](https://i.imgur.com/CGKQwH9.png)
 
 ### Script Configurable Parameters:
 The script allows the user to customize some aspects of the UI.
