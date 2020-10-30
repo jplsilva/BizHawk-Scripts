@@ -265,7 +265,7 @@ local function process_data(val_mode, val_games_clear, val_saves, val_continues,
 
     -- Dificulty Points
     local tmp_p_mode = 0
-    if val_mode == 0xF0 then
+    if val_mode == "Easy" then
         tmp_p_mode = -5
     end
     
