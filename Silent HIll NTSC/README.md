@@ -38,7 +38,8 @@ Current game difficulty.
 | Easy                    | -5      |
 
 #### Games Clear:
-Number of games cleared.
+Number of games cleared.  
+**Note:** There is no 0 games clear, the player always gets at least 2 points for clearing the game.
 
 | Games Clear             | Points  |
 | ----------------------- | ------- |
@@ -47,7 +48,6 @@ Number of games cleared.
 | 3                       | 6       |
 | 2                       | 4       |
 | 1                       | 2       |
-| 0                       | 0       |
 
 #### Ending Type:
 Type of ending achieved. Since there's no way to know the ending until it is reached, Good+ ending is assumed for the rank calculation.
